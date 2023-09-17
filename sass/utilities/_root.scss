@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+@each $color, $shade-map in $colors {
+    @each $shade, $value in $shade-map {
+        :root {
+            --#{$color}-#{$shade}: #{$value};
+        }
+    }
+}

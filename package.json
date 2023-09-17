@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "browserslist": "defaults",
+  "prettier": {
+    "tabWidth": 4
+  },
   "devDependencies": {
     "postcss-preset-env": "^9.1.3",
     "sass": "^1.66.1",
