@@ -3,7 +3,7 @@
 :root {
     @each $color, $shade-map in $colors {
         @each $shade, $value in $shade-map {
-            --#{$color}-#{$shade-name}: #{$value};
+            --#{$color}-#{$shade}: #{$value};
         }
     }
 }
