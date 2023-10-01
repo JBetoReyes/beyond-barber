@@ -4,29 +4,33 @@
     display: inline-flex;
     cursor: pointer;
     text-decoration: none;
-    text-transform: uppercase;
     line-height: 1;
-    border: 0;
-    font-weight: $font-weight-bold;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    text-transform: $button-text-transform;
+    font-weight: $button-font-weight;
+    padding: $button-padding;
+    border: $button-border;
     transition: 275ms ease;
-
-    padding: 1.125em 2em;
+    border-radius: $button-border-radius;
 
     &[data-type="accent"] {
-        background-color: $color-accent-400;
-        color: $color-primary-800;
+        background-color: $button-accent-background;
+        color: $button-accent-color;
+
+        &:is(:hover, :focus) {
+            background: $button-accent-background-hover;
+            color: $button-accent-color-hover;
+        }
     }
 
-    &[data-type="outline"] {
-        --outline-size: 5px;
-        background: transparent;
-        outline: var(--outline-size) solid $color-neutral-100;
-        outline-offset: calc(var(--outline-size) * -1);
-        color: $color-neutral-100;
-    }
+    &[data-type="primary"] {
+        background-color: $button-primary-background;
+        color: $button-primary-color;
 
-    &:is(:hover, :focus) {
-        background: $color-neutral-100;
-        color: $color-primary-800;
+        &:is(:hover, :focus) {
+            background: $button-primary-background-hover;
+            color: $button-primary-color-hover;
+        }
     }
 }
