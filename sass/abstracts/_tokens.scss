@@ -1,0 +1,17 @@
+@use "color" as *;
+@use "typography" as *;
+@use "sizes" as *;
+
+// layout
+$grid-gap: $size-6;
+$flex-group-gap: $size-4; // 16px
+
+$hero-padding-block: clamp(15rem, 15vh, 20rem);
+$section-padding-block: clamp($size-12, 10vh, $size-13);
+
+$card-body-padding: $size-8;
+
+$container-min-margin-inline: $size-4; // 16px
+$container-max-width: 64rem; // 960px
+$container-max-width-narrow: 40rem; // 960px
+$container-max-width-wide: 75rem; // 1200px
