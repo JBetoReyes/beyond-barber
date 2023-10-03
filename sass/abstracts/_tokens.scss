@@ -6,6 +6,8 @@ $color-text-default: $color-primary-700;
 $color-background-default: $color-primary-100;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
+$color-text-interactive-white: $color-neutral-100;
+$color-text-interactive-white-hover: $color-neutral-200;
 
 $letter-spacing-loose: 0.16em;
 
@@ -41,6 +43,7 @@ $flex-group-gap: $size-4; // 16px
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
 $section-padding-block: clamp($size-12, 10vh, $size-13);
+$section-padding-small-block: $size-8; // 32px
 
 $card-body-padding: $size-8;
 
@@ -48,6 +51,19 @@ $container-min-margin-inline: $size-4; // 16px
 $container-max-width: 64rem; // 960px
 $container-max-width-narrow: 40rem; // 960px
 $container-max-width-wide: 75rem; // 1200px
+
+// header
+$header-layout-alignment: start;
+$header-layout-justification: space-between;
+$header-title-font-size: $font-size-500;
+$header-title-color: $color-primary-300;
+$header-background-color: $color-primary-800;
+$header-padding: $size-8 0;
+
+// navbar
+$navbar-item-font-size: $font-size-400;
+$navbar-spacing: $size-9;
+$navbar-justification: center;
 
 // buttons
 $button-font-family: $body-font-family;

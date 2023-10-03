@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.navbar {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $navbar-spacing;
+        justify-content: $navbar-justification;
+    }
+
+    &__item {
+        a {
+            @include heading(
+                $navbar-item-font-size,
+                $color-text-interactive-white
+            );
+        }
+
+        a:is(:hover, :focus) {
+            color: $color-text-interactive-white-hover;
+        }
+    }
+}

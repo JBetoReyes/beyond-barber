@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+@use "sass:map";
+
+.header {
+    background-color: $header-background-color;
+    padding: $header-padding;
+    &__layout {
+        display: flex;
+        gap: $size-4;
+        align-items: $header-layout-alignment;
+        justify-content: $header-layout-justification;
+        flex-wrap: wrap;
+        --grid-gap: #{$size-8};
+        --switcher-breakpoint: #{map-get($breakpoints, "medium")};
+    }
+
+    &__title {
+        text-align: center;
+        @include heading($header-title-font-size, $header-title-color);
+        @include mq("medium") {
+            text-align: left;
+        }
+    }
+}

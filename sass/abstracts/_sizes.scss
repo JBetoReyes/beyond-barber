@@ -1,5 +1,6 @@
 // for creating utility classes
 $sizes: (
+    0: 0,
     1: 0.25rem,
     2: 0.5rem,
     3: 0.75rem,
@@ -18,6 +19,7 @@ $sizes: (
 );
 
 // for use in the code base
+$size-0: 0;
 $size-1: 0.25rem;
 $size-2: 0.5rem;
 $size-3: 0.75rem;

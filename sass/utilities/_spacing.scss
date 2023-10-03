@@ -6,6 +6,9 @@
 
 .section {
     padding-block: $section-padding-block;
+    &[data-type="narrow"] {
+        padding-block: $section-padding-small-block;
+    }
 }
 
 @each $size-name, $size-value in $sizes {
@@ -13,8 +16,18 @@
         &-#{$size-name} {
             margin: $size-value;
         }
+        &-medium-#{$size-name} {
+            @include mq("medium") {
+                margin: $size-value;
+            }
+        }
         &-block-start-#{$size-name} {
             margin-block-start: $size-value;
+        }
+        &-medium-block-start-#{$size-name} {
+            @include mq("medium") {
+                margin-block-start: $size-value;
+            }
         }
         &-block-end-#{$size-name} {
             margin-block-end: $size-value;
@@ -24,6 +37,11 @@
         }
         &-inline-start-#{$size-name} {
             margin-inline-start: $size-value;
+        }
+        &-medium-inline-start-#{$size-name} {
+            @include mq("medium") {
+                margin-inline-start: $size-value;
+            }
         }
         &-inline-end-#{$size-name} {
             margin-inline-end: $size-value;
