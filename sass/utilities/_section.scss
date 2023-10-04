@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.section {
+    &:nth-child(even) {
+        background-color: $body-background-color;
+    }
+
+    &:nth-child(odd) {
+        background-color: $section-odd-background-color;
+    }
+}

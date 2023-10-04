@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.about-us {
+    &__cta {
+        display: flex;
+        justify-content: center;
+        @include mq("medium") {
+            justify-content: start;
+        }
+    }
+}
