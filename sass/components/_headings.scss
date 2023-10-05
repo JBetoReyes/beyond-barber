@@ -2,6 +2,7 @@
 
 .heading-1 {
     @include heading($font-size-900, $color-accent-400);
+    letter-spacing: 0;
 }
 .heading-2 {
     @include heading($font-size-800, $color-accent-400);
