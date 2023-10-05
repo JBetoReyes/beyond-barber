@@ -1,0 +1,9 @@
+.services {
+    &__layout {
+        --flow-spacer: 3.75rem;
+    }
+    &__cta {
+        display: flex;
+        justify-content: center;
+    }
+}

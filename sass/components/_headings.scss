@@ -9,3 +9,9 @@
 .heading-3 {
     @include heading($font-size-700, $color-accent-400);
 }
+
+.heading-1,
+.heading-2,
+.heading-3 {
+    text-align: center;
+}
