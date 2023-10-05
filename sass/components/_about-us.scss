@@ -2,17 +2,26 @@
 
 .about-us {
     &__layout {
+        align-items: center;
         --grid-gap: 3.0625rem;
         @include mq("medium") {
             --grid-gap: #{$size-10};
         }
     }
+    &__content {
+        .switcher & {
+            flex-grow: 1.3;
+        }
+    }
     &__title,
     &__text-content {
         text-align: center;
-        @include mq("medium") {
+        @include mq("large") {
             text-align: left;
         }
+    }
+    &__text-content {
+        font-size: $font-size-600;
     }
     &__ctas {
         --grid-gap: 1.3125rem;
@@ -23,16 +32,16 @@
     &__cta {
         display: flex;
         justify-content: center;
-        @include mq("medium") {
+        @include mq("large") {
             justify-content: start;
-        }
-        &:is(:first-child) {
-            flex-grow: 0.8;
         }
     }
     &__img-container {
         display: flex;
         justify-content: center;
+        @include mq("medium") {
+            justify-content: left;
+        }
     }
     &__img {
         min-width: 21rem;
