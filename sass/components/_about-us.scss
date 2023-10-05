@@ -1,11 +1,43 @@
 @use "../abstracts/" as *;
 
 .about-us {
+    &__layout {
+        --grid-gap: 3.0625rem;
+        @include mq("medium") {
+            --grid-gap: #{$size-10};
+        }
+    }
+    &__title,
+    &__text-content {
+        text-align: center;
+        @include mq("medium") {
+            text-align: left;
+        }
+    }
+    &__ctas {
+        --grid-gap: 1.3125rem;
+        @include mq("large") {
+            --grid-gap: 0;
+        }
+    }
     &__cta {
         display: flex;
         justify-content: center;
         @include mq("medium") {
             justify-content: start;
+        }
+        &:is(:first-child) {
+            flex-grow: 0.8;
+        }
+    }
+    &__img-container {
+        display: flex;
+        justify-content: center;
+    }
+    &__img {
+        min-width: 21rem;
+        @include mq("medium") {
+            min-width: 27rem;
         }
     }
 }
