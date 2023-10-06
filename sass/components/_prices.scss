@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.prices {
+    text-align: center;
+
+    &__list {
+        --grid-base-width: 13rem;
+        --grid-gap: 3.75rem;
+        --grid-column-gap: 7.5rem;
+        --flow-spacer: 3.75rem;
+        @include mq("medium") {
+            --grid-base-width: 19.6875rem;
+        }
+    }
+}
+
+.price {
+    &__heading {
+        @include heading($font-size-650, $color-primary-400);
+    }
+
+    &__value {
+        margin-block-start: $size-2;
+        font-size: $font-size-600;
+        color: $color-primary-700;
+        font-weight: $font-weight-bold;
+    }
+}
