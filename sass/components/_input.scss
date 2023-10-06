@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.input {
+    border: $form-input-border;
+    border-radius: $form-input-border-radius;
+    outline: none;
+    width: $form-input-width;
+    height: $form-input-height;
+    padding: $form-input-padding;
+}

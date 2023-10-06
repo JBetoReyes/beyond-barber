@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.appointment {
+    &__sub-title {
+        font-size: $appointment-sub-heading-font-size;
+        margin-block-start: $appointment-sub-heading-margin-block-start;
+    }
+}

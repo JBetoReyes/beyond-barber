@@ -1,0 +1,11 @@
+.form {
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+    }
+
+    &__field-label {
+        text-align: left;
+    }
+}
