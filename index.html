@@ -129,7 +129,7 @@
             </div>
         </section>
 
-        <section class="prices section" id="prices">
+        <section class="prices | section" id="prices">
             <div class="container | flow" type="narrow">
                 <h2 class="prices__title | heading-2">Pricing</h2>
                 <div class="prices__list | grid-auto-fit">
@@ -158,6 +158,46 @@
                         <div class="price__value">$45</div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="appointment | section">
+            <div class="container | flow" type="narrow">
+                <div class="appointment__header">
+                    <h2 class="appointment__title | heading-2">Book an appointment</h2>
+                    <p class="appointment__sub-title | text-center">Please fill out the form below to book an
+                        appointment
+                </div>
+                </p>
+                <form class="form | grid-auto-fit">
+                    <div class="form__field">
+                        <label class="form__field-label" for="firstName">Your name</label>
+                        <input class="form__field-input | input" name="firstName" type="text">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="email">E-mail address</label>
+                        <input class="form__field-input | input" name="email" type="email">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="date">Date</label>
+                        <input class="form__field-input | input" name="date" type="date">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="phoneNumber">Phone
+                            number
+                        </label>
+                        <input class="form__field-input | input" name="phoneNumber" type="tel">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="service">Select service</label>
+                        <input class="form__field-input | input" name="service" type="text">
+                    </div>
+                    <div class="form__field">
+                        <label class="form__field-label" for="barbersName">Barber's name
+                            <span>(optional)</span></label>
+                        <input class="form__fiedl-input | input" name="barbersName" type="text">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
