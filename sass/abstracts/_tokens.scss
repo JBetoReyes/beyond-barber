@@ -46,8 +46,13 @@ $grid-gap: $size-6;
 $flex-group-gap: $size-4; // 16px
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
+
+//section
 $section-padding-block: clamp($size-12, 10vh, $size-13);
 $section-padding-small-block: $size-8; // 32px
+
+$section-sub-heading-font-size: $font-size-600;
+$section-sub-heading-margin-block-start: 1.3125rem;
 
 $card-body-padding: $size-8;
 
@@ -70,8 +75,12 @@ $navbar-spacing: $size-9;
 $navbar-justification: center;
 
 // hours
-$hours-sub-heading-font-size: $font-size-600;
-$hours-sub-heading-margin-block-start: 1.3125rem;
+$hours-sub-heading-font-size: $section-sub-heading-font-size;
+$hours-sub-heading-margin-block-start: $section-sub-heading-margin-block-start;
+
+// appointment
+$appointment-sub-heading-font-size: $section-sub-heading-font-size;
+$appointment-sub-heading-margin-block-start: $section-sub-heading-margin-block-start;
 
 // buttons
 $button-font-family: $body-font-family;
@@ -119,5 +128,10 @@ $pricing-card-heading-color: $secondary-card-heading-color;
 $pricing-card-content-margin-block-start: $secondary-card-content-margin-block-start;
 $pricing-card-content-color: $color-primary-700;
 $pricing-card-content-font-size: $font-size-500;
+
 // forms
 $form-input-border-radius: $border-radius-1;
+$form-input-border: 3px solid $color-primary-200;
+$form-input-width: 18.75rem;
+$form-input-height: 3.125rem;
+$form-input-padding: 0.8125rem;
