@@ -2,7 +2,7 @@
 
 .about-us {
     &__layout {
-        align-items: flex-center;
+        align-items: center;
         --grid-gap: 3.0625rem;
         @include mq("medium") {
             --grid-gap: #{$size-10};
