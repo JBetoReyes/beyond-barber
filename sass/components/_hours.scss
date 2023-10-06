@@ -3,8 +3,8 @@
 .hours {
     text-align: center;
     &__sub-title {
-        font-size: $font-size-600;
-        margin-block-start: 1.3125rem;
+        font-size: $hours-sub-heading-font-size;
+        margin-block-start: $hours-sub-heading-margin-block-start;
     }
 
     &__list {
@@ -37,10 +37,13 @@
         }
     }
     &__heading {
-        @include heading($font-size-700, $color-primary-400);
+        @include heading(
+            $hours-card-heading-font-size,
+            $hours-card-heading-color
+        );
     }
     &__content {
-        margin-block-start: $size-2;
-        font-size: $font-size-500;
+        margin-block-start: $hours-card-content-margin-block-start;
+        font-size: $hours-card-content-font-size;
     }
 }

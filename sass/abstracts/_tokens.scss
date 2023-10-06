@@ -69,6 +69,10 @@ $navbar-item-font-size: $font-size-400;
 $navbar-spacing: $size-9;
 $navbar-justification: center;
 
+// hours
+$hours-sub-heading-font-size: $font-size-600;
+$hours-sub-heading-margin-block-start: 1.3125rem;
+
 // buttons
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-600;
@@ -100,5 +104,20 @@ $card-line-height: 1.25;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
 
+$secondary-card-heading-color: $color-primary-400;
+$secondary-card-content-margin-block-start: $size-2;
+
+// hours cards
+$hours-card-heading-font-size: $font-size-700;
+$hours-card-heading-color: $secondary-card-heading-color;
+$hours-card-content-margin-block-start: $secondary-card-content-margin-block-start;
+$hours-card-content-font-size: $font-size-500;
+
+// pricing cards
+$pricing-card-heading-font-size: $font-size-650;
+$pricing-card-heading-color: $secondary-card-heading-color;
+$pricing-card-content-margin-block-start: $secondary-card-content-margin-block-start;
+$pricing-card-content-color: $color-primary-700;
+$pricing-card-content-font-size: $font-size-500;
 // forms
 $form-input-border-radius: $border-radius-1;
