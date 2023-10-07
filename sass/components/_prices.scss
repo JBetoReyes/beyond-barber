@@ -4,13 +4,18 @@
     text-align: center;
 
     &__list {
-        --grid-base-width: 13rem;
-        --grid-gap: 3.75rem;
-        --grid-column-gap: 7.5rem;
-        --flow-spacer: 3.75rem;
+        --grid-base-width: #{$prices-item-base-width};
+        --grid-gap: #{$prices-grid-row-gap};
+        --grid-column-gap: #{$prices-grid-column-gap};
+        --flow-spacer: #{$prices-item-list-margin-block-start};
         @include mq("medium") {
-            --grid-base-width: 19.6875rem;
+            margin-inline: $prices-item-list-medium-margin-inline;
+            grid-template-columns: $prices-item-medium-first-column-width $prices-item-medium-second-column-width;
         }
+    }
+
+    &__item {
+        --flow-spacer: #{$prices-item-flow-spacer};
     }
 }
 
@@ -23,7 +28,6 @@
     }
 
     &__value {
-        margin-block-start: $pricing-card-content-margin-block-start;
         font-size: $pricing-card-content-font-size;
         color: $pricing-card-content-color;
         font-weight: $font-weight-bold;

@@ -12,6 +12,8 @@ $color-text-interactive-accent-hover: $color-accent-300;
 
 $letter-spacing-loose: 0.16em;
 
+$flow-spacer-small: $size-2;
+
 // border-radius
 $border-radius-1: $size-2;
 $border-radius-2: $size-4;
@@ -58,7 +60,7 @@ $card-body-padding: $size-8;
 
 $container-min-margin-inline: $size-4; // 16px
 $container-max-width: 64rem; // 960px
-$container-max-width-narrow: 40rem; // 960px
+$container-max-width-narrow: 43rem; // 688px
 $container-max-width-wide: 75rem; // 1200px
 
 // header
@@ -73,6 +75,16 @@ $header-padding: $size-8 0;
 $navbar-item-font-size: $font-size-400;
 $navbar-spacing: $size-9;
 $navbar-justification: center;
+
+// prices
+$prices-item-base-width: 13rem;
+$prices-grid-row-gap: 3.75rem;
+$prices-grid-column-gap: 7.5rem;
+$prices-item-list-margin-block-start: 3.75rem;
+$prices-item-list-medium-margin-inline: 3.44rem;
+$prices-item-medium-first-column-width: 12.56rem;
+$prices-item-medium-second-column-width: 15.1875rem;
+$prices-item-flow-spacer: $flow-spacer-small;
 
 // hours
 $hours-sub-heading-font-size: $section-sub-heading-font-size;
@@ -122,18 +134,16 @@ $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
 
 $secondary-card-heading-color: $color-primary-400;
-$secondary-card-content-margin-block-start: $size-2;
 
 // hours cards
 $hours-card-heading-font-size: $font-size-700;
 $hours-card-heading-color: $secondary-card-heading-color;
-$hours-card-content-margin-block-start: $secondary-card-content-margin-block-start;
+$hours-card-content-margin-block-start: $flow-spacer-small;
 $hours-card-content-font-size: $font-size-500;
 
 // pricing cards
 $pricing-card-heading-font-size: $font-size-650;
 $pricing-card-heading-color: $secondary-card-heading-color;
-$pricing-card-content-margin-block-start: $secondary-card-content-margin-block-start;
 $pricing-card-content-color: $color-primary-700;
 $pricing-card-content-font-size: $font-size-500;
 
