@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.footer {
+    background-color: $footer-background-color;
+    padding: $footer-padding;
+    &__layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content {
+        color: $footer-content-color;
+    }
+
+    &__tel {
+        font-family: $footer-tel-font-family;
+        color: $color-text-interactive-white;
+        font-weight: $footer-tel-weight;
+        letter-spacing: $footer-tel-letter-spacing;
+        &:is(:hover, :focus) {
+            color: $color-text-interactive-accent-hover;
+        }
+    }
+}

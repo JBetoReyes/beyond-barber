@@ -82,6 +82,14 @@ $hours-sub-heading-margin-block-start: $section-sub-heading-margin-block-start;
 $appointment-sub-heading-font-size: $section-sub-heading-font-size;
 $appointment-sub-heading-margin-block-start: $section-sub-heading-margin-block-start;
 
+// footer
+$footer-background-color: $color-primary-800;
+$footer-padding: 1.94rem 1.81rem;
+$footer-content-color: $color-primary-300;
+$footer-tel-font-family: $font-family-accent;
+$footer-tel-weight: $font-weight-bold;
+$footer-tel-letter-spacing: $letter-spacing-loose;
+
 // buttons
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-600;
@@ -129,9 +137,17 @@ $pricing-card-content-margin-block-start: $secondary-card-content-margin-block-s
 $pricing-card-content-color: $color-primary-700;
 $pricing-card-content-font-size: $font-size-500;
 
+// inputs
+$input-border-radius: $border-radius-1;
+$input-border: 3px solid $color-primary-200;
+
 // forms
-$form-input-border-radius: $border-radius-1;
-$form-input-border: 3px solid $color-primary-200;
 $form-input-width: 18.75rem;
 $form-input-height: 3.125rem;
 $form-input-padding: 0.8125rem;
+$form-input-placeholder-color: $color-primary-200;
+$form-submit-font-size: $font-size-600;
+
+// form fields
+$form-field-label-font-size: $font-size-400;
+$form-field-label-font-weight: $font-weight-bold;

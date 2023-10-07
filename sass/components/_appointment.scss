@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .appointment {
+    --flow-spacer: 1.5rem;
     &__sub-title {
         font-size: $appointment-sub-heading-font-size;
         margin-block-start: $appointment-sub-heading-margin-block-start;
