@@ -3,6 +3,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    --grid-base-width: 18.8rem;
     @include mq("medium") {
         --flow-spacer: 1.63rem;
     }
