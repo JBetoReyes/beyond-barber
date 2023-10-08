@@ -4,4 +4,9 @@
     border: $input-border;
     border-radius: $input-border-radius;
     outline: none;
+    transition: border-color 0.3s ease-in;
+
+    &:focus {
+        border-color: $input-border-color-focus;
+    }
 }
