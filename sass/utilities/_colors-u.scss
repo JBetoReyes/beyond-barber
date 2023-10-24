@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
-@each $color, $shade-map in $colors {
+@each $color, $shade-map in $active-theme {
     @each $shade-name, $shade-value in $shade-map {
         .bg-#{$color}-#{$shade-name} {
             background-color: $shade-value;
