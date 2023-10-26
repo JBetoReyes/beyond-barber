@@ -5,8 +5,8 @@
 $active-theme: $light;
 
 $color-text-default: $color-primary-700;
-$color-background-default: $color-primary-100;
-$color-background-odd-section: $color-primary-200;
+$color-background-default: $color-primary-200;
+$color-background-odd-section: $color-primary-100;
 $color-text-interactive-default: $color-accent-400;
 $color-text-interactive-hover: $color-accent-500;
 $color-text-interactive-white: $color-neutral-100;
@@ -134,7 +134,7 @@ $button-primary-background-hover: $color-primary-800;
 // cards
 $card-flow-spacing: $size-2;
 $card-body-padding: $size-8;
-$card-background-default: $body-background-color;
+$card-background-default: $color-primary-100;
 $card-border-radius: $border-radius-2;
 $card-box-shadow: $box-shadow-1;
 $card-color-default: $color-primary-700;
