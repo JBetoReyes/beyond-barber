@@ -7,13 +7,13 @@
         }
     }
 
-    @media (prefers-color-scheme: dark) {
-        @each $color, $shade-map in $dark {
-            @each $shade, $value in $shade-map {
-                --#{$color}-#{$shade}: #{$value};
-            }
-        }
-    }
+    // @media (prefers-color-scheme: dark) {
+    //     @each $color, $shade-map in $dark {
+    //         @each $shade, $value in $shade-map {
+    //             --#{$color}-#{$shade}: #{$value};
+    //         }
+    //     }
+    // }
 
     @each $size-name, $sizes-map in $font-sizes {
         @if $size-name == "small" {
