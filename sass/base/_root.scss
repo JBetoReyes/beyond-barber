@@ -45,3 +45,11 @@ body[data-theme="dark"] {
     }
   }
 }
+
+body[data-theme="😎"] {
+    @each $color, $shade-map in $sleek {
+      @each $shade, $value in $shade-map {
+        --#{$color}-#{$shade}: #{$value};
+      }
+    }
+  }
