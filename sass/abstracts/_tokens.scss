@@ -2,7 +2,7 @@
 @use "typography" as *;
 @use "sizes" as *;
 
-$enable-media-query-dark-mode: false;
+$enable-media-query-dark-mode: true;
 $active-theme: $light;
 
 $color-text-default: $color-primary-700;
